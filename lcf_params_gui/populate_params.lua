@@ -71,24 +71,6 @@ return
 
     if skip_default_values then
       subtract_table(result, defaults)
-      -- Remove paramaters with default values.
-      --[[ (Should rework generic code as library function.)
-      if (result.keep_comments == defaults.keep_comments) then
-        result.keep_comments = nil
-      end
-      if (result.keep_unparsed_text == defaults.keep_unparsed_text) then
-        result.keep_unparsed_text = nil
-      end
-      if (result.indent_chunk == defaults.indent_chunk) then
-        result.indent_chunk = nil
-      end
-      if (result.right_margin == defaults.right_margin) then
-        result.right_margin = nil
-      end
-      if (result.max_text_width == defaults.max_text_width) then
-        result.max_text_width = nil
-      end
-      --]]
     end
 
     return result
