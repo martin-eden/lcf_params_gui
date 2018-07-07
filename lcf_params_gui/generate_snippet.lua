@@ -56,6 +56,7 @@ local result =
     end
 
     result = table.concat(result, ' ')
+
     return result
   end
 
