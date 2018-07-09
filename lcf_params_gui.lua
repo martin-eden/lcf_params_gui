@@ -159,21 +159,7 @@ local group_margins =
   )
 group_margins.MinWidth = 400
 
-local group_command_line =
-  ui.ScrollGroup:new(
-    {
-      HSliderMode = 'off',
-      VSliderMode = 'off',
-      Child =
-        ui.Canvas:new(
-          {
-            AutoWidth = true,
-            AutoHeight = true,
-            Child = command_line_text,
-          }
-        ),
-    }
-  )
+local group_command_line = command_line_text
 
 local group_main =
   v_group(
