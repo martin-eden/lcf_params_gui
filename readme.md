@@ -34,8 +34,7 @@ You need to compile and install TekUI window manager which is included
 in this distribution.
 
 Directory `tek_project` contains source of GUI subsystem 
-[TekUI 1.12][tekui]. I've changed `LUAVER` variable in it's `config` 
-file from `5.1` to `5.3`. You need to install it before use.
+[TekUI 1.12][tekui]. You need to install it before use.
 
 ```
 $ cd tek_project
