@@ -28,23 +28,22 @@ TekUI - MIT,
 * X11 window subsystem
 
 
-### Installation
+### TekUI installation
 
-You need to compile and install TekUI window manager which is included
-in this distribution.
-
-Directory `tek_project` contains source of GUI subsystem 
-[TekUI 1.12][tekui]. You need to install it before use.
+You need to download, compile and install [TekUI][tekui] window manager.
 
 ```
-$ cd tek_project
-$ sudo make all install clean
+$ wget http://tekui.neoscientists.org/releases/tekui-1.12-r1.tgz
+$ tar -xvf tekui-1.12-r1.tgz
+$ cd tekui-1.12-r1
+$ sudo make LUAVER=5.3 all install clean
 ```
+Test for successful installation: `$ lua -l tek.ui`.
 
-### Uninstallation
+### TekUI removal
 
-`$ sudo rm -rf /usr/local/lib/lua/5.3/tek/`
-
+`$ sudo rm -rf /usr/local/lib/lua/5.3/tek`
+`$ sudo rm -rf /usr/local/share/lua/5.3/tek`
 
 ### Usage
 
