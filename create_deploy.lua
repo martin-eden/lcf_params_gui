@@ -1,13 +1,13 @@
-local workshop_path = '../../../../workshop/?.lua'
+local workshop_path = '../../../?.lua'
 package.path = package.path .. ';' .. workshop_path
 
-require('base')
+require('workshop.base')
 
 local create_deploy_script = request('!.system.create_deploy_script')
 
 local used_modules =
   {
-    'base',
+    'workshop.base',
     'lcf_params_gui',
   }
 
