@@ -17,8 +17,7 @@ on one screen.
 
 ### Licenses
 
-TekUI - MIT,
-@this - GPLv3
+TekUI - MIT, this project - GPLv3.
 
 
 ### Requirements
@@ -38,12 +37,14 @@ $ tar -xvf tekui-1.12-r1.tgz
 $ cd tekui-1.12-r1
 $ sudo make LUAVER=5.3 all install clean
 ```
-Test for successful installation: `$ lua -l tek.ui`.
+Test of successful installation: `$ lua -l tek.ui`.
 
 ### TekUI removal
 
-`$ sudo rm -rf /usr/local/lib/lua/5.3/tek`
-`$ sudo rm -rf /usr/local/share/lua/5.3/tek`
+```
+$ sudo rm -rf /usr/local/lib/lua/5.3/tek
+$ sudo rm -rf /usr/local/share/lua/5.3/tek
+```
 
 ### Usage
 
