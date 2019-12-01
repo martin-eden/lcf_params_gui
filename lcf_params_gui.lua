@@ -57,12 +57,12 @@ local update_command_line_text =
   end
 
 local add_notification =
-  function(obj, event_name, handler)
+  function(obj, field_name, handler)
     assert_table(obj)
-    assert_string(event_name)
+    assert_string(field_name)
     assert_function(handler)
     obj:addNotify(
-      event_name,
+      field_name,
       ui.NOTIFY_ALWAYS,
       {
         ui.NOTIFY_SELF,
