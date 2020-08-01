@@ -19,42 +19,22 @@ on one screen.
 
 TekUI - MIT, this project - GPLv3.
 
-
 ### Requirements
 
 * Bash
 * Lua 5.3
-* X11 window subsystem
 
-
-### TekUI installation
-
-You need to download, compile and install [TekUI][tekui] window manager.
-
-```
-$ wget http://tekui.neoscientists.org/releases/tekui-1.12-r1.tgz
-$ tar -xvf tekui-1.12-r1.tgz
-$ cd tekui-1.12-r1
-$ sudo make LUAVER=5.3 all install clean
-```
-Test of successful installation: `$ lua -l tek.ui`.
-
-### TekUI removal
-
-```
-$ sudo rm -rf /usr/local/lib/lua/5.3/tek
-$ sudo rm -rf /usr/local/share/lua/5.3/tek
-```
+### [TekUI installation][tekui-setup]
 
 ### Usage
 
-`$ lua lcf_params_gui.lua`
+`lua5.3 lcf_params_gui.lua`
 
 ----
 
 See also [my other repositories][repos].
 
-[tekui]: http://tekui.neoscientists.org/
+[tekui-setup]: https://gist.github.com/martin-eden/e721436788994e5b183e94fb2f84b30b
 [lcf]: https://github.com/martin-eden/lua_code_formatter
 [repos]: https://github.com/martin-eden/contents
 [snapshot]: https://user-images.githubusercontent.com/20048064/42449231-8535fc0c-8388-11e8-9e2e-c8133d7b3a79.png
